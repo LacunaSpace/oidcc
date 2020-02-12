@@ -1,10 +1,12 @@
 {"1.1.0",
-[{<<"base64url">>,{pkg,<<"base64url">>,<<"0.0.1">>},1},
- {<<"erljwt">>,{pkg,<<"erljwt">>,<<"2.0.4">>},0},
- {<<"jsone">>,{pkg,<<"jsone">>,<<"1.4.7">>},1}]}.
+[{<<"base64url">>,{pkg,<<"base64url">>,<<"1.0.1">>},1},
+ {<<"erljwt">>,
+  {git,"git@github.com:fholzhauser/erljwt.git",
+       {ref,"d05cd5f7311dc3919e8d27d035a800ee997c580a"}},
+  0},
+ {<<"jsone">>,{pkg,<<"jsone">>,<<"1.5.2">>},1}]}.
 [
 {pkg_hash,[
- {<<"base64url">>, <<"36A90125F5948E3AFD7BE97662A1504B934DD5DAC78451CA6E9ABF85A10286BE">>},
- {<<"erljwt">>, <<"52D742AE66B91F2BB4888D402B54A027A6B08EEC0895E226FB1AD7C41949969A">>},
- {<<"jsone">>, <<"A970C23D9700AE7842B526C57677E6E3F10894B429524696EAD547E9302391C0">>}]}
+ {<<"base64url">>, <<"F8C7F2DA04CA9A5D0F5F50258F055E1D699F0E8BF4CFDB30B750865368403CF6">>},
+ {<<"jsone">>, <<"87ADEA283C9CF24767B4DEED44602989A5331156DF5D60A2660E9C9114D54046">>}]}
 ].
