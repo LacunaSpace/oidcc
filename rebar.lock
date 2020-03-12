@@ -1,7 +1,7 @@
 {"1.1.0",
 [{<<"base64url">>,{pkg,<<"base64url">>,<<"1.0.1">>},1},
  {<<"erljwt">>,
-  {git,"git@github.com:fholzhauser/erljwt.git",
+  {git,"git://github.com/fholzhauser/erljwt.git",
        {ref,"d05cd5f7311dc3919e8d27d035a800ee997c580a"}},
   0},
  {<<"jsone">>,{pkg,<<"jsone">>,<<"1.5.2">>},1}]}.
