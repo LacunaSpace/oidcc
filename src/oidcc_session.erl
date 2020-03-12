@@ -110,7 +110,7 @@ set_client_mod(ClientMod, Pid) ->
     gen_server:call(Pid, {set, client_mod, ClientMod }).
 
 set_redirect_uri(RedirectUri, Pid) ->
-    gen_server:call(Pid, {set, redurect_uri, RedirectUri}).
+    gen_server:call(Pid, {set, redirect_uri, RedirectUri}).
 %% gen_server.
 
 init({Id, Nonce, Pkce, ProviderId, Scopes}) ->
