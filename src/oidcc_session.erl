@@ -16,10 +16,12 @@
 -export([get_user_agent/1]).
 -export([get_cookie_data/1]).
 -export([get_client_mod/1]).
+-export([get_redirect_uri/1]).
 -export([set_user_agent/2]).
 -export([set_cookie_data/2]).
 -export([set_peer_ip/2]).
 -export([set_client_mod/2]).
+-export([set_redirect_uri/2]).
 -export([close/1]).
 
 
@@ -92,6 +94,9 @@ get_cookie_data(Pid) ->
 get_client_mod(Pid) ->
     gen_server:call(Pid, {get, client_mod}).
 
+get_redirect_uri(Pid) ->
+    gen_server:call(Pid, {get, redirect_uri}).
+
 set_user_agent(UserAgent, Pid) ->
     gen_server:call(Pid, {set, user_agent, UserAgent}).
 
@@ -103,6 +108,9 @@ set_cookie_data(CookieData, Pid) ->
 
 set_client_mod(ClientMod, Pid) ->
     gen_server:call(Pid, {set, client_mod, ClientMod }).
+
+set_redirect_uri(RedirectUri, Pid) ->
+    gen_server:call(Pid, {set, redurect_uri, RedirectUri}).
 %% gen_server.
 
 init({Id, Nonce, Pkce, ProviderId, Scopes}) ->
